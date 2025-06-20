@@ -5,9 +5,1367 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="app"></div>
+      <!-- Header section -->
+      <header class="header">
+        <div class=" container-header">
+          <div class="header-nav">
+            <a
+             
+              target="_self"
+              rel="noopener"
+              href="./index.html"
+            >
+              <picture>
+                <source
+                  media="(min-width: 834px)"
+                  srcset="
+                  /src/img/img.webp   1x,
+                  /src/img/img.webp 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(max-width: 833px)"
+                  srcset="/src/img/img.webp 1x, /src/img/img.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  class="logo-header"
+                  src="/src/img/img.webp"
+                  alt="Logo"
+                />
+              </picture>
+            </a>
+            <button
+              
+              class="menu-button open-modal" data-modal="modal-menu"
+              title="open menu"
+              type="button"
+            >
+              <svg class="header-menu" width="32" height="32">
+                <use href="/src/img/icons.svg#icon-menu2"></use>
+              </svg>
+            </button>
+            <ul class="menu-nav-header">
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#about">Про нас</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#services">Послуги</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#projects">Проєкти</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#choose-us">Чому ми?</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#team">Команда</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#partners">Партнери</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#faq">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+  <main>
+      <!-- Hero section -->
+      <section>
+        <div class="container hero-container">
+          <div class="hero-info">
+            <h1 class="hero-title">ТОВ «Гардексперт»</h1>
+            <p class="hero-text">+38 (067) 329-59-39,</p>
+            <p class="hero-text">+38 (063) 675-25-46</p>
+            <p class="hero-mail">guardexpertt@gmail.com</p>
+            <div class="hero-social">
+            <a
+              class="social-link"
+              target="_blank"
+              rel="noopener"
+              href="https://www.linkedin.com/in/llc-guardexpert-439436332"
+            >
+            <picture>
+              <source
+                srcset="
+                ./src/img/social/linkedIn.png 1x,
+                ./src/img/social/linkedIn-2x.png 2x
+                "
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+              <img
+                class="social-img"
+                loading="lazy"
+                src="/src/img/social/linkedIn.png"
+                alt="photo desc"
+                width="24"
+                height="24"
+              />
+            </picture>
+            </a>
+            <a
+              class="social-link"
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/guardexpert_official"
+            >
+            <picture>
+              <source
+                srcset="
+                ./src/img/social/instagram.png 1x,
+                ./src/img/social/instagram-2x.png 2x
+                "
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+              <img
+                class="social-img"
+                loading="lazy"
+                src="/src/img/social/instagram.png"
+                alt="photo desc"
+                width="24"
+                height="24"
+              />
+            </picture>
+            </a>
+          </div>
+          </div>
+          <button class="adviceBtn hero-button">Консультація експерта</button>
+        </div>
+      </section>
+   
+    <!-- About section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Про нас</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime fugiat reiciendis a dolor similique repellat eveniet odio tempore rem nobis, non esse. Fuga illum animi neque quia minus ab voluptatem.
+        </p>
+        <div class="about-lists">
+          <ul class="about-list">
+            <li><span class="bullet"></span> Lorem ipsum dolor sit amet</li>
+            <li><span class="bullet"></span> Lorem ipsum dolor sit amet</li>
+            <li><span class="bullet"></span> Lorem ipsum dolor sit amet</li>
+            <li>
+              <span class="bullet"></span> Lorem ipsum dolor sit amet
+            </li>
+          </ul>
+          <ul class="about-list">
+            <li><span class="bullet"></span> Lorem ipsum dolor sit amet</li>
+            <li><span class="bullet"></span> Lorem ipsum dolor sit amet</li>
+            <li><span class="bullet"></span> Lorem ipsum dolor sit amet</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Certification section -->
+    <section id="certification" class="section-certification">
+      <div class="container certification-container">
+        <h3 class="second-title">Сертифікація та ліцензії</h3>
+        <div class="swiper-certification">
+          <div class="swiper custom-swiper swiper-one">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="certification-item">
+                  <picture class="certification-img">
+                    <source
+                      srcset="
+                      /src/img/img.webp  1x,
+                        /src/img/img.webp  2x
+                      "
+                      media="(min-width: 375px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class=""
+                      loading="lazy"
+                      src="/src/img/img.webp "
+                      alt="photo"
+                      width="302"
+                      height="274"
+                    />
+                  </picture>
+                  <button class="certification-button">link </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="certification-item">
+                  <picture class="certification-img">
+                    <source
+                      srcset="
+                      /src/img/img.webp  1x,
+                      /src/img/img.webp 2x
+                      "
+                      media="(min-width: 375px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class=""
+                      loading="lazy"
+                      src="/src/img/img.webp "
+                      alt="photo"
+                      width="302"
+                      height="274"
+                    />
+                  </picture>
+                  <button class="certification-button">link </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="certification-item">
+                  <picture class="certification-img">
+                    <source
+                      srcset="
+                      /src/img/img.webp  1x,
+                      /src/img/img.webp  2x
+                      "
+                      media="(min-width: 375px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class=""
+                      loading="lazy"
+                      src="/src/img/img.webp "
+                      alt="photo"
+                      width="302"
+                      height="274"
+                    />
+                  </picture>
+
+                  <button class="certification-button">link </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination custom-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section id="services" class="section">
+      <div class="container services-container">
+        <h2 class="section-title">Послуги</h2>
+        
+          <div class="swiper custom-swiper swiper-two">
+            <div class=" swiper-wrapper">
+              <div class="swiper-slide services-item ">
+                <div class="services-item-card">
+                <div class="services-info-card">
+                
+                    <picture>
+                      <source
+                        srcset="/src/img/services/services1.png
+                           1x,
+                           ./src/img/services/services1.png 2x
+                        "
+                        media="(min-width: 375px)"
+                        type="image/png"
+                      />
+                      <img
+                        class="services-img"
+                        loading="lazy"
+                        src="/src/img/services/services1.png"
+                        alt=""
+                        width="80"
+                        height="80"
+                      />
+                    </picture>
+                  <h4 class="services-title">Проєктування систем пожежної сигналізації</h4>
+                  <p class="services-text">
+                    Проєктування систем пожежної сигналізації, пожежогасіння, раннього виявлення надзвичайних ситуацій та оповіщення населення, систем вентиляції та кондиціонування, систем засобів зв’язку з урахуванням вимог GRS.
+                  </p>
+                </div>
+                <button class="services-button">Детальніше →</button>
+              </div>
+            </div>
+              <div class="swiper-slide services-item ">
+                <div class="services-item-card">
+                <div class="services-info-card">
+                    <picture>
+                      <source
+                        srcset="/src/img/services/services2.png
+                           1x,
+                           ./src/img/services/services2.png 2x
+                        "
+                        media="(min-width: 375px)"
+                        type="image/png"
+                      />
+                      <img
+                        class="services-img"
+                        loading="lazy"
+                        src="/src/img/services/services2.png"
+                        alt=""
+                        width="80"
+                        height="80"
+                      />
+                    </picture>
+                  <h4 class="services-title">Монтаж та постачання обладнання для систем пожежної сигналізації</h4>
+                  <p class="services-text">
+                    Постачання обладнання, монтаж, підтримка експлуатаційної придатності (технічне обслуговування) систем пожежної сигналізації, оповіщення про пожежу та управління евакуацією людей, устаткування для передачі тривожних сповіщень.
+                  </p>
+                </div>
+                <button class="services-button">Детальніше →</button>
+              </div>
+              </div>
+              <div class="swiper-slide services-item ">
+                <div class="services-item-card">
+                <div class="services-info-card">
+                
+                    <picture>
+                      <source
+                        srcset="/src/img/services/services3.png
+                           1x,
+                           ./src/img/services/services3.png 2x
+                        "
+                        media="(min-width: 375px)"
+                        type="image/png"
+                      />
+                      <img
+                        class="services-img"
+                        loading="lazy"
+                        src="/src/img/services/services3.png"
+                        alt=""
+                        width="80"
+                        height="80"
+                      />
+                    </picture>
+                  <h4 class="services-title">Системи пожежогасіння</h4>
+                  <p class="services-text">
+                    Постачання обладнання, монтаж, підтримання експлуатаційної придатності (технічне обслуговування) систем пожежогасіння (водяних, пінних, газових, порошкових, аерозольних).
+                  </p>
+                </div>
+                <button class="services-button">Детальніше →</button>
+              </div>
+              </div>
+              <div class="swiper-slide services-item ">
+                <div class="services-item-card">
+                <div class="services-info-card">
+                    <picture>
+                      <source
+                        srcset="/src/img/services/services4.png
+                           1x,
+                           ./src/img/services/services4.png 2x
+                        "
+                        media="(min-width: 375px)"
+                        type="image/png"
+                      />
+                      <img
+                        class="services-img"
+                        loading="lazy"
+                        src="/src/img/services/services4.png"
+                        alt=""
+                        width="80"
+                        height="80"
+                      />
+                    </picture>
+                  <h4 class="services-title">Обслуговування систем пожежної безпеки</h4>
+                  <p class="services-text">
+                    Обслуговування систем пожежної сигналізації, оповіщення про пожежу та пожежогасіння: перевірка, налаштування та ремонт обладнання з метою забезпечення його безперебійної роботи.
+                  </p>
+                </div>
+                <button class="services-button">Детальніше →</button>
+              </div>
+              </div>
+              <div class="swiper-slide services-item ">
+                <div class="services-item-card">
+                <div class="services-info-card">
+                
+                    <picture>
+                      <source
+                        srcset="/src/img/services/services5.png
+                           1x,
+                           ./src/img/services/services5.png 2x
+                        "
+                        media="(min-width: 375px)"
+                        type="image/png"
+                      />
+                      <img
+                        class="services-img"
+                        loading="lazy"
+                        src="/src/img/services/services5.png"
+                        alt=""
+                        width="80"
+                        height="80"
+                      />
+                    </picture>
+                  <h4 class="services-title">Вогнезахисна обробка конструкцій</h4>
+                  <p class="services-text">
+                    Обробка матеріалів та конструкцій (вогнезахисне просочування поверхневе, вогнезахисне обробляння (фарбування, штукатурення, обмотування, облицювання), вогнезахисне заповнення для забезпечення  стійкості до високих температур.
+                  </p>
+                </div>
+                <button class="services-button">Детальніше →</button>
+              </div>
+              </div>
+              <div class="swiper-slide services-item ">
+                <div class="services-item-card">
+                <div class="services-info-card">
+                
+                    <picture>
+                      <source
+                        srcset="/src/img/services/services6.png
+                           1x,
+                           ./src/img/services/services6.png 2x
+                        "
+                        media="(min-width: 375px)"
+                        type="image/png"
+                      />
+                      <img
+                        class="services-img"
+                        loading="lazy"
+                        src="/src/img/services/services6.png"
+                        alt=""
+                        width="80"
+                        height="80"
+                      />
+                    </picture>
+                  <h4 class="services-title">Консультування з питань пожежної безпеки</h4>
+                  <p class="services-text">
+                    Розробка концептуальних рішень та рекомендації з підбору обладнання, відповідно запланованому бюджету.
+                  </p>
+                </div>
+                <button class="services-button">Детальніше →</button>
+              </div>
+              </div>
+              
+            </div>
+              <div class="swiper-pagination"></div>
+    
+            <div class="swiper-button-prev swiper-btn-prev"></div>
+            <div class="swiper-button-next swiper-btn-next"></div>
+    
+            <div class="swiper-scrollbar"></div>
+    
+          </div>
+          
+      </div>
+    </section>
+    <!-- Projects section -->
+    <section id="projects" class="section">
+      <div class="container project-container">
+        <h2 class="section-title">Проєкти</h2>
+    
+        <div class="swiper custom-swiper swiper-six">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide projects-item">
+              <div class="project-card-desk"> 
+              <div class="project-card " style="background-image: url('/src/img/projects/study.jpg');">
+                <div class="project-overlay">
+                  <h3 class="project-title">Укриття у дошкільних, шкільних та навчальних закладах середньої та вищої освіти
+                  </h3>
+                </div>
+              </div>
+              <button class="open-modal project-btn" data-modal="project-modal1">Детальніше →</button>
+              <div class="project-text">
+                <ul class="project-text-list">
+                  <li><span class="bullet"></span>Спроєктовані системи пожежної сигналізації та пожежогасіння - безпечний і комфортний простір створений відповідно до вимог Міністерства освіти і науки України та програми укриттів для закладів освіти "Моя Фортеця".</li>
+                  <li><span class="bullet"></span>Консультування, аудит, проєктування, монтаж та технічна підтримка. </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+            <div class="swiper-slide projects-item">
+              <div class="project-card-desk">
+              <div class="project-card" style="background-image: url('/src/img/projects/medical.jpg');">
+                <div class="project-overlay">
+                  <h3 class="project-title">Міські, районні, національні лікарні та санаторії</h3>
+                </div>
+              </div>
+              <button class="open-modal project-btn" data-modal="project-modal2">Детальніше →</button>
+              <div class="project-text">
+                <ul class="project-text-list">
+                  <li><span class="bullet"></span>Підтримання експлуатаційної придатності (технічне обслуговування) автоматичної системи протипожежного захисту у закладах Міністерства охорони здоров'я. </li>
+                  <li><span class="bullet"></span>Консультування, аудит, проєктування, монтаж та технічна підтримка закладів по всій території України. </li>
+                </ul>
+              </div>
+              </div>
+            </div>
+            <div class="swiper-slide projects-item">
+              <div class="project-card-desk">
+              <div class="project-card" style="background-image: url('/src/img/projects/industrial.jpg');">
+                <div class="project-overlay">
+                  <h3 class="project-title">Промислові підприємства усіх напрямків діяльності</h3>
+                </div>
+              </div>
+              <button class="open-modal project-btn" data-modal="project-modal3">Детальніше →</button>
+              <div class="project-text">
+                <ul class="project-text-list">
+                  <li><span class="bullet"></span>Проєктування, монтаж та технічна підтримка систем пожежної сигналізації, евакуації та пожежогасіння на промислових об'єктах різних галузей.  </li>
+                  <li><span class="bullet"></span>Консультування, аудит, проєктування, монтаж та технічна підтримка.
+                  </li>
+                </ul>
+              </div>
+              </div>
+            </div>
+            <div class="swiper-slide projects-item">
+              <div class="project-card-desk">
+              <div class="project-card" style="background-image: url('/src/img/projects/malls.jpg');">
+                <div class="project-overlay">
+                  <h3 class="project-title">ТРЦ, бізнес-центри, офісні центри, банки</h3>
+                </div>
+              </div>
+              <button class="open-modal project-btn" data-modal="project-modal4">Детальніше →</button>
+              <div class="project-text">
+                <ul class="project-text-list">
+                  <li><span class="bullet"></span>Забезпечення цілодобового протипожежного захисту для розважальних та офісних приміщень. </li>
+                  <li><span class="bullet"></span>Консультування, аудит, проєктування, монтаж та технічна підтримка.
+                  </li>
+                </ul>
+              </div>
+              </div>
+            </div>
+
+          </div>
+    
+         
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev swiper-btn-prev"></div>
+          <div class="swiper-button-next swiper-btn-next"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Our-team section -->
+    <section id="team" class="section">
+      <div class="container team-container">
+        <h2 class="section-title">Наша команда</h2>
+        <div class="swiper custom-swiper swiper-five">
+          <div class=" swiper-wrapper">
+            <div class="swiper-slide team-item " style="background-image: url('/src/img/img.webp');">
+              <div class="team-info-card" >
+                <h4 class="team-name">first name surname</h4>
+                <p class="team-position">position</p>
+              </div>
+            </div>
+            <div class="swiper-slide team-item " style="background-image: url('/src/img/img.webp');">
+              <div class="team-info-card">
+                <h4 class="team-name">first name surname</h4>
+                <p class="team-position">position</p>
+              </div>
+            </div>
+            <div class="swiper-slide team-item " style="background-image: url('/src/img/img.webp');">
+              <div class="team-info-card">
+                <h4 class="team-name">first name surname</h4>
+                <p class="team-position">position</p>
+              </div>
+            </div>
+            <div class="swiper-slide team-item " style="background-image: url('/src/img/img.webp');">
+              <div class="team-info-card">
+                <h4 class="team-name">first name surname</h4>
+                <p class="team-position">position</p>
+              </div>
+            </div>
+          </div>
+            <div class="swiper-pagination"></div>
+  
+          <div class="swiper-button-prev swiper-btn-prev"></div>
+          <div class="swiper-button-next swiper-btn-next"></div>
+  
+          <div class="swiper-scrollbar"></div>
+  
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Partners section -->
+    <section id="partners" class="section">
+      <div class="container partners-container">
+        <h2 class="section-title">Партнери</h2>
+         <div class="swiper custom-swiper swiper-four">
+          <div class=" swiper-wrapper partners-list">
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/src/img/partners/siemens-logo.svg.png
+                      "
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/src/img/partners/siemens-logo.svg.png"
+                      alt=""
+                      width="158"
+                      height="89"
+                    />
+                  </picture>
+              </div>
+              
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/src/img/partners/bosch.png
+                      "
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/src/img/partners/bosch.png"
+                      alt=""
+                      width="158"
+                      height="89"
+                    />
+                  </picture>
+              </div>
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/src/img/partners/vents.png
+                      "
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/src/img/partners/vents.png"
+                      alt=""
+                      width="158"
+                      height="89"
+                    />
+                  </picture>
+              </div>
+              
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+                <picture>
+                  <source
+                    srcset="/src/img/partners/UFP.png
+                    "
+                    media="(min-width: 375px)"
+                    type="image/png"
+                  />
+                  <img
+                    class="partners-img"
+                    loading="lazy"
+                    src="/src/img/partners/UFP.png"
+                    alt=""
+                    width="158"
+              height="89"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/src/img/partners/ab-metal.jpg
+                      "
+                      media="(min-width: 375px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/src/img/partners/ab-metal.jpg"
+                      alt=""
+                      width="158"
+                height="89"
+                    />
+                  </picture>
+              </div>
+              
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/src/img/partners/brand.png
+                      "
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/src/img/partners/brand.png"
+                      alt=""
+                      width="158"
+                height="89"
+                    />
+                  </picture>
+              </div>
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/src/img/partners/ventservice.png
+                      "
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/src/img/partners/ventservice.png"
+                      alt=""
+                      width="158"
+                height="89"
+                    />
+                  </picture>
+              </div>
+              
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/src/img/partners/e-server.png
+                      "
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/src/img/partners/e-server.png"
+                      alt=""
+                      width="158"
+                height="89"
+                    />
+                  </picture>
+              </div>
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/src/img/partners/vintana.jpeg
+                      "
+                      media="(min-width: 375px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/src/img/partners/vintana.jpeg"
+                      alt=""
+                      width="158"
+                height="89"
+                    />
+                  </picture>
+              </div>
+              
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/src/img/partners/senko.png
+                      "
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/src/img/partners/senko.png"
+                      alt=""
+                      width="158"
+                height="89"
+                    />
+                  </picture>
+              </div>
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/src/img/partners/walraven.png
+                      "
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/src/img/partners/walraven.png"
+                      alt=""
+                      width="158"
+                height="89"
+                    />
+                  </picture>
+              </div>
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                <picture>
+                  <source
+                    srcset="/src/img/partners/tiras.png
+                    "
+                    media="(min-width: 375px)"
+                    type="image/png"
+                  />
+                  <img
+                    class="partners-img"
+                    loading="lazy"
+                    src="/src/img/partners/tiras.png"
+                    alt=""
+                    width="158"
+              height="89"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+            <div class="swiper-pagination"></div>
+  
+          <div class="swiper-button-prev swiper-btn-prev"></div>
+          <div class="swiper-button-next swiper-btn-next"></div>
+  
+          <div class="swiper-scrollbar"></div>
+  
+        </div>
+      </div>
+    </section>
+    <!-- FAQ section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Поширені запитання (FAQ)</h2>
+        <div class="faq-item">
+          <button class="faq-question">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/src/img/icons.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</p>
+          </div>
+        </div>
+      
+        <div class="faq-item">
+          <button class="faq-question">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste odio voluptates praesentium cupiditate magnam voluptate, ipsam aliquam animi debitis doloribus quisquam facere asperiores eius quae! Sint fugiat voluptates iure fugit.
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/src/img/icons.svg#icon-arrow"></use>
+            </svg></span>
+          </button>
+          <div class="faq-answer">
+            <ul class="answer-list">
+              <li>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</li>
+              <li>-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</li>
+              <li>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</li>
+              <li>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</li>
+              <li>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</li>
+              <li>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</li>
+              <li>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/src/img/icons.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/src/img/icons.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class=" feedback-contacts">
+    <!-- Feedback section -->
+    <section class="feedback-section">
+      <div class="container feedback-container">
+        <h4 class="feedback-title">Залишились питання?</h4>
+        <form class="contact-form feedback-form" action="https://script.google.com/macros/s/AKfycbyg96NKhzvGYMXwMrWFT3scDg3J35u7AeisJr1YhXqRSWJXG27VX40Xeh2cLrjXpnHJtQ/exec" method="POST">
+          
+          <input type="email" id="email" name="email" placeholder="Електронна адреса" required>
+        
+          
+          <div class="phone-input-wrapper">
+            <span class="phone-prefix">+380</span>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Номер телефону"
+              maxlength="9"
+              required
+            />
+          </div>
+        
+        
+          <textarea id="message" name="comment" rows="7" placeholder="Напишіть нам ..."></textarea>
+        
+          <button type="submit">Надіслати повідомлення</button>
+        </form>
+       
+      </div>
+    </section>
+    <!-- Contacts section -->
+    <section class="contacts-section">
+      <div class="container contacts-container">
+        <h4 class="contacts-title">Наші контакти</h4>
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <img
+              src="/src/img/working-hours.png"
+              alt="Іконка"
+              width="16"
+              height="16"
+            />
+            <p><b>Графік роботи:</b> понеділок-п'ятниця 08:00 – 17:00</p>
+          </li>
+          <li class="contacts-item">
+            <img
+              src="/src/img/phone.png"
+              alt="Іконка"
+              width="16"
+              height="16"
+            />
+            <div>
+              <p>+38 (067) 329-59-39</p>
+              <p>+38 (063) 675-25-46</p>
+            </div>
+          </li>
+          <li class="contacts-item">
+            <img
+              src="/src/img/email.png"
+              alt="Іконка"
+              width="16"
+              height="16"
+            />
+            <div class="emails">
+              <ul class="emails-list">
+                <li><p><b>Email:</b></p><p>guardexpertt@gmail.com</p></li>
+                <li><li><p><b>Департамент продажів: </b></p><p>sales.guardexpertt@gmail.com</p></li></li>
+                <li><li><p><b>Департамент закупівель:</b></p><p>purchasing.guardexpert@gmail.com</p></li></li>
+                <li><li><p><b>Юридичний департамент:</b></p><p>legal.guardexpert@gmail.com</p></li></li>
+                <li><li><p><b>Технічна підтримка:</b></p><p>support.guardexpert@gmail.com</p></li></li>
+              </ul>
+            </div>
+          </li>
+          <li class="contacts-item">
+            <img
+              src="/src/img/location.png"
+              alt="Іконка"
+              width="16"
+              height="16"
+            />
+            <div>
+              <p>ТОВ «Гардексперт»</p>
+              <p>
+                08132, Київська обл., Бучанський р-н, м. Вишневе, вул.
+                Європейська, будинок 27, офіс 5
+              </p>
+            </div>
+          </li>
+        </ul>
+        <picture class="contacts-map">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/src/img/map-1x-desk.png 1x, ./src/img/map-2x-desk.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 834px)"
+            srcset="/src/img/map-1x-tab.png 1x, ./src/img/map-2x-tab.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 833px)"
+            srcset="/src/img/map-1x.png 1x, ./src/img/map-2x.png 2x"
+            type="image/png"
+            width="287"
+            height="159"
+          />
+          <img src="/src/img/map-1x-desk.png" alt="Map" />
+        </picture>
+      </div>
+    </section>
+  </div>
+  </main>
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-block">
+        <div class="footer-info">
+          <a
+            class="footer-logo"
+            target="_self"
+            rel="noopener"
+            href="./index.html"
+          >
+            <picture>
+              <source
+                media="(min-width: 834px)"
+                srcset="
+                  ./src/img/logo-footer-desk.png    1x,
+                  ./src/img/logo-footer-desk-2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                media="(max-width: 833px)"
+                srcset="
+                  ./src/img/logo-footer.png    1x,
+                  ./src/img/logo-footer-2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                class="logo-header"
+                src="/src/img/logo-footer-desk.png"
+                alt="Logo"
+              />
+            </picture>
+          </a>
+          <ul class="footer-list">
+            <li>
+              <a href="#about">Про нас</a>
+            </li>
+            <li>
+              <a  href="#services">Послуги</a>
+            </li>
+            <li >
+              <a  href="#projects">Проєкти</a>
+            </li>
+            <li >
+              <a href="#choose-us">Чому ми?</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li >
+              <a  href="#team">Команда</a>
+            </li>
+            <li >
+              <a  href="#partners">Партнери</a>
+            </li>
+            <li >
+              <a  href="#faq">FAQ</a>
+            </li>
+          </ul>
+          <div class="socials-column">
+          <div class="list-socials">
+            <a
+              class=""
+              target="_blank"
+              rel="noopener"
+              href="https://www.linkedin.com/in/llc-guardexpert-439436332"
+            >
+            <picture>
+              <source
+                srcset="
+                ./src/img/social/linkedIn.png 1x,
+                ./src/img/social/linkedIn-2x.png 2x
+                "
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+              <img
+                class="footer-img"
+                loading="lazy"
+                src="/src/img/social/linkedIn.png"
+                alt="photo desc"
+                
+              />
+            </picture>
+            </a>
+            <a
+              class=""
+              target="_blank"
+              rel="noopener"
+              href="https://wa.me/+380673295939"
+            >
+            <picture>
+              <source
+                srcset="
+                ./src/img/social/whatsapp.png 1x,
+                ./src/img/social/whatsapp-2x.png 2x
+                "
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+              <img
+                class="footer-img"
+                loading="lazy"
+                src="/src/img/social/whatsapp.png"
+                alt="photo desc"
+              
+              />
+            </picture>
+            </a>
+            <a
+              class=""
+              target="_blank"
+              rel="noopener"
+              href="viber://chat?number=+380673295939"
+            >
+            <picture>
+              <source
+                srcset="
+                ./src/img/social/viber.png 1x,
+                ./src/img/social/viber-2x.png 2x
+                "
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+              <img
+                class="footer-img"
+                loading="lazy"
+                src="/src/img/social/viber.png"
+                alt="photo desc"
+               
+              />
+            </picture>
+            </a>
+          </div>
+        
+          <div class="list-socials">
+            <a
+              class=""
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/guardexpert_official"
+            >
+            <picture>
+              <source
+                srcset="
+                ./src/img/social/instagram.png 1x,
+                ./src/img/social/instagram-2x.png 2x
+                "
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+              <img
+                class="footer-img"
+                loading="lazy"
+                src="/src/img/social/instagram.png"
+                alt="photo desc"
+                
+              />
+            </picture>
+            </a>
+            <a
+              class=""
+              target="_blank"
+              rel="noopener"
+              href="https://www.linkedin.com/in/llc-guardexpert-439436332"
+            >
+            <picture>
+              <source
+                srcset="
+                ./src/img/social/telegram.png 1x,
+                ./src/img/social/telegram-2x.png 2x
+                "
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+              <img
+                class="footer-img"
+                loading="lazy"
+                src="/src/img/social/telegram.png"
+                alt="photo desc"
+                
+              />
+            </picture>
+            </a>
+          </div>
+        </div>
+        </div>
+        <button class="adviceBtn footer-button">Консультація експерта</button>
+      </div>
+        <p class="copyright">© 2025 Guard Expert. Усі права захищено</p>
+      </div>
+    
+  </footer>
+    <!-- Modal section -->
+<section>
+  <!-- Modal Menu -->
+
+  <div class="modal hidden" id="modal-menu">
+    <div class="modal-menu-content">
+      <button class="close-modal">✖</button>
+      <ul class="menu-nav-modal">
+        <li class="menu-item-modal">
+          <a class="menu-link-modal" href="#about">Про нас</a>
+        </li>
+        <li class="menu-item-modal">
+          <a class="menu-link-modal" href="#services">Послуги</a>
+        </li>
+        <li class="menu-item-modal">
+          <a class="menu-link-modal" href="#projects">Проєкти</a>
+        </li>
+        <li class="menu-item-modal">
+          <a class="menu-link-modalr" href="#choose-us">Чому ми?</a>
+        </li>
+        <li class="menu-item-modal">
+          <a class="menu-link-modal" href="#team">Команда</a>
+        </li>
+        <li class="menu-item-modal">
+          <a class="menu-link-modal" href="#partners">Партнери</a>
+        </li>
+        <li class="menu-item-modal">
+          <a class="menu-link-modal" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<!-- Advice Modal -->
+
+  <div class="popup-backdrop" id="advicePopup">
+    <div class="advice-window">
+      <button class="advice-close" id="adviceClose">✖</button>
+      <h4 class="advice-title">Заповніть форму</h4>
+      <form class="contact-form advice-form" action="https://script.google.com/macros/s/AKfycbyg96NKhzvGYMXwMrWFT3scDg3J35u7AeisJr1YhXqRSWJXG27VX40Xeh2cLrjXpnHJtQ/exec" method="POST">
+        
+        <input type="email" id="email" name="email" placeholder="Електронна адреса" required>
+      
+        
+        <div class="advice-phone-wrapper">
+          <span class="phone-prefix">+380</span>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Номер телефону"
+            maxlength="9"
+            required
+          />
+        </div>
+        <button class="advice-btn" type="submit">Отримати консультацію</button>
+      </form>
+    </div>
+  </div>
+  <div id="form-status" class="modal hidden">
+    <div class="modal-content status-message">
+      <button class="close-status">✖</button>
+      <p class="status-text">Дякуємо!</p>
+      <p class="status-text">Ми з вами зв’яжемося!</p>
+      <picture>
+        <source
+          srcset="
+          /src/img/message.png 1x
+          "
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+        <img
+          class="message-img"
+          loading="lazy"
+          src="/src/img/message.png"
+          alt="photo desc"
+          
+        />
+      </picture>
+    </div>
+  </div>
+<!-- Project Modal -->
+<div class="modal hidden" id="project-modal1">
+  <div class="modal-content">
+    <button class="close-modal">✖</button>
+    <h3 class="modal-project-title">Укриття у дошкільних, шкільних та навчальних закладах середньої та вищої освіти</h3>
+     
+        <ul class="modal-project-text">
+          <li><span class="bullet"></span>Спроєктовані системи пожежної сигналізації та пожежогасіння - безпечний і комфортний простір створений відповідно до вимог Міністерства освіти і науки України та програми укриттів для закладів освіти "Моя Фортеця".</li>
+          <li><span class="bullet"></span>Консультування, аудит, проєктування, монтаж та технічна підтримка. </li>
+        </ul>
+   
+  </div>
+</div>
+<div class="modal hidden" id="project-modal2">
+  <div class="modal-content">
+    <button class="close-modal">✖</button>
+    <h3 class="modal-project-title">Міські, районні, національні лікарні та санаторії</h3>
+   <ul class="modal-project-text">
+    <li><span class="bullet"></span>Підтримання експлуатаційної придатності (технічне обслуговування) автоматичної системи протипожежного захисту у закладах Міністерства охорони здоров'я. </li>
+    <li><span class="bullet"></span>Консультування, аудит, проєктування, монтаж та технічна підтримка закладів по всій території України. </li>
+    </ul>
+  
+  </div>
+</div>
+<div class="modal hidden" id="project-modal3">
+  <div class="modal-content">
+    <button class="close-modal">✖</button>
+    <h3 class="modal-project-title">Промислові підприємства усіх напрямків діяльності</h3>
+   
+      <ul class="modal-project-text">
+        <li><span class="bullet"></span>Проєктування, монтаж та технічна підтримка систем пожежної сигналізації, евакуації та пожежогасіння на промислових об'єктах різних галузей.  </li>
+        <li><span class="bullet"></span>Консультування, аудит, проєктування, монтаж та технічна підтримка.
+        </li>
+      </ul>
+    
+  </div>
+</div>
+<div class="modal hidden" id="project-modal4">
+  <div class="modal-content">
+    <button class="close-modal">✖</button>
+    <h3 class="modal-project-title">ТРЦ, бізнес-центри, офісні центри, банки</h3>
+
+      <ul class="modal-project-text">
+        <li><span class="bullet"></span>Забезпечення цілодобового протипожежного захисту для розважальних та офісних приміщень. </li>
+        <li><span class="bullet"></span>Консультування, аудит, проєктування, монтаж та технічна підтримка.
+        </li>
+      </ul>
+   
+  </div>
+</div>
+</section>
+
+
+
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
