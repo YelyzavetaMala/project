@@ -286,7 +286,7 @@ body::-webkit-scrollbar-track {
 .swiper-four .swiper-pagination-bullet,
 .swiper-five .swiper-pagination-bullet,
 .swiper-six .swiper-pagination-bullet {
-  background-color: #b6bafa;
+  background-color: #d6d8ff;
   width: 12px;
   height: 8px;
   border-radius: 8px;
@@ -651,6 +651,7 @@ body::-webkit-scrollbar-track {
 .services-item {
   margin: 0 auto;
   height: 100%;
+
   @media (min-width: 834px) {
   }
   @media (min-width: 1440px) {
@@ -659,19 +660,19 @@ body::-webkit-scrollbar-track {
 
 .services-item-card {
   height: 380px;
-  width: 257px;
+  width: 247px;
   margin-bottom: 30px;
   margin: 0 auto;
   @media screen and (min-width: 834px) {
-    width: 373px;
+    width: 353px;
     height: 476px;
-    background-color: #b6bafa;
+    background-color: #d6d8ff;
     border-radius: 8px;
   }
   @media screen and (min-width: 1440px) {
-    width: 419px;
+    width: 390px;
     height: 563px;
-    background-color: #b6bafa;
+    background-color: #d6d8ff;
     border-radius: 8px;
   }
 }
@@ -684,7 +685,7 @@ body::-webkit-scrollbar-track {
   padding: 16px;
   height: 286px;
   width: 257px;
-  background-color: #b6bafa;
+  background-color: #d6d8ff;
   border-radius: 8px;
   @media screen and (min-width: 834px) {
     width: 373px;
@@ -1056,7 +1057,7 @@ body::-webkit-scrollbar-track {
 
 .partners-info-card {
   height: 68px;
-  width: 121px;
+  width: 141px;
   display: flex;
   justify-content: center;
 
@@ -1065,7 +1066,7 @@ body::-webkit-scrollbar-track {
     height: 78px;
   }
   @media screen and (min-width: 1440px) {
-    width: 158px;
+    width: 198px;
     height: 89px;
   }
 }
@@ -1098,7 +1099,7 @@ body::-webkit-scrollbar-track {
   justify-content: space-between;
   align-items: center;
   color: var(--primary-text-color);
-  background-color: #b6bafa;
+  background-color: #d6d8ff;
   border: none;
   border-radius: 8px;
   @media screen and (min-width: 834px) {
@@ -1154,7 +1155,7 @@ body::-webkit-scrollbar-track {
   transition: max-height 0.6s ease, opacity 0.6s ease;
   font-size: 8px;
 
-  background-color: #b6bafa;
+  background-color: #d6d8ff;
   border: none;
   border-radius: 8px;
   margin-bottom: 8px;
@@ -1197,7 +1198,7 @@ body::-webkit-scrollbar-track {
     justify-content: center;
     align-items: start;
     margin-bottom: 40px;
-    background-color: #b6bafa;
+    background-color: #d6d8ff;
     gap: 24px;
   }
   @media screen and (min-width: 1440px) {
@@ -1208,12 +1209,13 @@ body::-webkit-scrollbar-track {
 
 .feedback-section {
   padding: 16px 0;
-  background-color: #b6bafa;
+  background-color: #d6d8ff;
   border-radius: 8px;
   @media screen and (min-width: 834px) {
     border-radius: 8px 0 0 8px;
     padding: 32px 0 0;
     background-color: transparent;
+
     max-width: 341px;
   }
   @media screen and (min-width: 1440px) {

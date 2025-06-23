@@ -74,7 +74,7 @@ initResponsiveSwiper(".swiper-one", {
 initResponsiveSwiper(".swiper-two", {
   375: { slidesPerView: 1, spaceBetween: 16 },
   834: { slidesPerView: 2, spaceBetween: 24 },
-  1440: { slidesPerView: 3, spaceBetween: 60 },
+  1440: { slidesPerView: 3, spaceBetween: 10 },
 });
 
 // swiper 3 — по 1, 2, 4 слайди
@@ -87,7 +87,7 @@ initResponsiveSwiper(".swiper-three", {
 initResponsiveSwiper(".swiper-four", {
   375: { slidesPerView: 2, spaceBetween: 16 },
   834: { slidesPerView: 3, spaceBetween: 20 },
-  1440: { slidesPerView: 6, spaceBetween: 16 },
+  1440: { slidesPerView: 6, spaceBetween: 6 },
 });
 
 initResponsiveSwiper(".swiper-five", {
