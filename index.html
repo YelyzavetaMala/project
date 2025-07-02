@@ -101,22 +101,22 @@
               href="https://www.linkedin.com/in/llc-guardexpert-439436332"
             >
             <picture>
-              <source
-                srcset="
-                ./src/img/social/linkedIn.png 1x,
-                ./src/img/social/linkedIn-2x.png 2x
-                "
-                media="(min-width: 320px)"
-                type="image/png"
-              />
-              <img
-                class="social-img"
-                loading="lazy"
-                src="/src/img/social/linkedIn.png"
-                alt="photo desc"
-                width="24"
-                height="24"
-              />
+              <!-- Desktop -->
+              <source media="(min-width: 1440px)" srcset="
+              /src/img/social/linkedIn-1x-desk.png  1x,
+              /src/img/social/linkedIn-2x-desk.png 2x
+                " type="image/png" />
+              <!-- Mobile + Tablet -->
+              <source media="(max-width: 1439px)" srcset="
+              /src/img/social/linkedIn.png  1x,
+              /src/img/social/linkedIn-2x.png 2x
+                " type="image/png" />
+              <img  class="social-img"
+              loading="lazy"
+              src="/src/img/social/linkedIn.png"
+              alt="photo desc"
+              width="24"
+              height="24"/>
             </picture>
             </a>
             <a
@@ -126,22 +126,22 @@
               href="https://www.instagram.com/guardexpert_official"
             >
             <picture>
-              <source
-                srcset="
-                ./src/img/social/instagram.png 1x,
-                ./src/img/social/instagram-2x.png 2x
-                "
-                media="(min-width: 320px)"
-                type="image/png"
-              />
-              <img
-                class="social-img"
-                loading="lazy"
-                src="/src/img/social/instagram.png"
-                alt="photo desc"
-                width="24"
-                height="24"
-              />
+              <!-- Desktop -->
+              <source media="(min-width: 1440px)" srcset="
+              /src/img/social/instagram-1x-desk.png  1x,
+              /src/img/social/instagram-2x-desk.png 2x
+                " type="image/png" />
+              <!-- Mobile + Tablet -->
+              <source media="(max-width: 1439px)" srcset="
+              /src/img/social/instagram.png  1x,
+              /src/img/social/instagram-2x.png 2x
+                " type="image/png" />
+              <img  class="social-img"
+              loading="lazy"
+              src="/src/img/social/instagram.png"
+              alt="photo desc"
+              width="24"
+              height="24"/>
             </picture>
             </a>
           </div>
@@ -149,27 +149,30 @@
           <button class="adviceBtn hero-button">Консультація експерта</button>
         </div>
       </section>
-   
+    </div>
     <!-- About section -->
     <section id="about" class="section">
       <div class="container">
         <h2 class="section-title">Про нас</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime fugiat reiciendis a dolor similique repellat eveniet odio tempore rem nobis, non esse. Fuga illum animi neque quia minus ab voluptatem.
+          Ми надаємо весь комплекс послуг протипожежного захисту: консультація,
+          проєктування та супровід експертизи, продаж/монтаж обладнання,
+          сервісні послуги щодо:
         </p>
         <div class="about-lists">
           <ul class="about-list">
-            <li><span class="bullet"></span> Lorem ipsum dolor sit amet</li>
-            <li><span class="bullet"></span> Lorem ipsum dolor sit amet</li>
-            <li><span class="bullet"></span> Lorem ipsum dolor sit amet</li>
+            <li><span class="bullet"></span>систем пожежної сигналізації;</li>
+            <li><span class="bullet"></span>систем пожежогасіння;</li>
+            <li><span class="bullet"></span>систем оповіщення;</li>
             <li>
-              <span class="bullet"></span> Lorem ipsum dolor sit amet
+              <span class="bullet"></span>систем раннього виявлення надзвичайних
+              ситуацій;
             </li>
           </ul>
           <ul class="about-list">
-            <li><span class="bullet"></span> Lorem ipsum dolor sit amet</li>
-            <li><span class="bullet"></span> Lorem ipsum dolor sit amet</li>
-            <li><span class="bullet"></span> Lorem ipsum dolor sit amet</li>
+            <li><span class="bullet"></span>систем вентиляції;</li>
+            <li><span class="bullet"></span>систем кондиціонування;</li>
+            <li><span class="bullet"></span>вогнезахисту конструкцій.</li>
           </ul>
         </div>
       </div>
@@ -186,8 +189,8 @@
                   <picture class="certification-img">
                     <source
                       srcset="
-                      /src/img/img.webp  1x,
-                        /src/img/img.webp  2x
+                        ./src/img/certification-1.jpg 1x,
+                        ./src/img/certification-1.jpg 2x
                       "
                       media="(min-width: 375px)"
                       type="image/jpg"
@@ -195,13 +198,13 @@
                     <img
                       class=""
                       loading="lazy"
-                      src="/src/img/img.webp "
+                      src="/src/img/certification-1.jpg "
                       alt="photo"
                       width="302"
                       height="274"
                     />
                   </picture>
-                  <button class="certification-button">link </button>
+                  <button class="certification-button">Ліцензія ДСНС</button>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -209,8 +212,8 @@
                   <picture class="certification-img">
                     <source
                       srcset="
-                      /src/img/img.webp  1x,
-                      /src/img/img.webp 2x
+                        ./src/img/certification-2.jpg 1x,
+                        ./src/img/certification-2.jpg 2x
                       "
                       media="(min-width: 375px)"
                       type="image/jpg"
@@ -218,13 +221,13 @@
                     <img
                       class=""
                       loading="lazy"
-                      src="/src/img/img.webp "
+                      src="/src/img/certification-2.jpg "
                       alt="photo"
                       width="302"
                       height="274"
                     />
                   </picture>
-                  <button class="certification-button">link </button>
+                  <button class="certification-button">Ліцензія</button>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -232,8 +235,8 @@
                   <picture class="certification-img">
                     <source
                       srcset="
-                      /src/img/img.webp  1x,
-                      /src/img/img.webp  2x
+                        ./src/img/certification-3.jpg 1x,
+                        ./src/img/certification-3.jpg 2x
                       "
                       media="(min-width: 375px)"
                       type="image/jpg"
@@ -241,14 +244,14 @@
                     <img
                       class=""
                       loading="lazy"
-                      src="/src/img/img.webp "
+                      src="/src/img/certification-3.jpg "
                       alt="photo"
                       width="302"
                       height="274"
                     />
                   </picture>
 
-                  <button class="certification-button">link </button>
+                  <button class="certification-button">Сертифікат</button>
                 </div>
               </div>
             </div>
@@ -263,7 +266,46 @@
         </div>
       </div>
     </section>
-
+    <!-- Advantages section -->
+    <section class="section-advantages">
+      <div class="container">
+        <h3 class="second-title">Переваги співпраці з нами</h3>
+        <ul class="advantages-list">
+          <li>
+            <span class="bullet"></span>
+            Професіоналізм та досвід: якісні товари та послуги досвідчених
+            спеціалістів - гарантія ефективності і надійності рішень.
+          </li>
+          <li>
+            <span class="bullet"></span>
+            Весь комплекс послуг "під ключ": від консультації до встановлення та
+            обслуговування.
+          </li>
+          <li>
+            <span class="bullet"></span>
+            Якісне обладнання: гарантія безпеки, завдяки якісним імпортним та
+            вітчизняним матеріалам, що мають відповідні сертифікати та
+            забезпечення дотримання актуальних пожежних стандартів.
+          </li>
+          <li>
+            <span class="bullet"></span>
+            Індивідуальні рішення за вартістю типових: адаптовані до специфіки
+            вашого об'єкта, що враховують всі його особливості та забезпечують
+            максимальну ефективність.
+          </li>
+          <li>
+            <span class="bullet"></span>
+            Оперативність та підтримка: швидке вирішення запитів і професійна
+            технічна допомога.
+          </li>
+          <li>
+            <span class="bullet"></span>
+            Довгострокова співпраця передбачає стабільне обслуговування на
+            кожному етапі та комфортну цінову політику для замовників.
+          </li>
+        </ul>
+      </div>
+    </section>
     <!-- Services section -->
     <section id="services" class="section">
       <div class="container services-container">
@@ -279,7 +321,7 @@
                       <source
                         srcset="/src/img/services/services1.png
                            1x,
-                           ./src/img/services/services1.png 2x
+                           ./src/img/services/services1-2х.png 2x
                         "
                         media="(min-width: 375px)"
                         type="image/png"
@@ -298,7 +340,7 @@
                     Проєктування систем пожежної сигналізації, пожежогасіння, раннього виявлення надзвичайних ситуацій та оповіщення населення, систем вентиляції та кондиціонування, систем засобів зв’язку з урахуванням вимог GRS.
                   </p>
                 </div>
-                <button class="services-button">Детальніше →</button>
+                <button class="services-button open-modal" data-modal="services-modal1">Детальніше →</button>
               </div>
             </div>
               <div class="swiper-slide services-item ">
@@ -308,7 +350,7 @@
                       <source
                         srcset="/src/img/services/services2.png
                            1x,
-                           ./src/img/services/services2.png 2x
+                           ./src/img/services/services2-2х.png 2x
                         "
                         media="(min-width: 375px)"
                         type="image/png"
@@ -327,7 +369,7 @@
                     Постачання обладнання, монтаж, підтримка експлуатаційної придатності (технічне обслуговування) систем пожежної сигналізації, оповіщення про пожежу та управління евакуацією людей, устаткування для передачі тривожних сповіщень.
                   </p>
                 </div>
-                <button class="services-button">Детальніше →</button>
+                <button class="services-button open-modal" data-modal="services-modal2">Детальніше →</button>
               </div>
               </div>
               <div class="swiper-slide services-item ">
@@ -338,7 +380,7 @@
                       <source
                         srcset="/src/img/services/services3.png
                            1x,
-                           ./src/img/services/services3.png 2x
+                           ./src/img/services/services3-2х.png 2x
                         "
                         media="(min-width: 375px)"
                         type="image/png"
@@ -357,7 +399,7 @@
                     Постачання обладнання, монтаж, підтримання експлуатаційної придатності (технічне обслуговування) систем пожежогасіння (водяних, пінних, газових, порошкових, аерозольних).
                   </p>
                 </div>
-                <button class="services-button">Детальніше →</button>
+                <button class="services-button open-modal" data-modal="services-modal3">Детальніше →</button>
               </div>
               </div>
               <div class="swiper-slide services-item ">
@@ -367,7 +409,7 @@
                       <source
                         srcset="/src/img/services/services4.png
                            1x,
-                           ./src/img/services/services4.png 2x
+                           ./src/img/services/services4-2х.png 2x
                         "
                         media="(min-width: 375px)"
                         type="image/png"
@@ -386,7 +428,7 @@
                     Обслуговування систем пожежної сигналізації, оповіщення про пожежу та пожежогасіння: перевірка, налаштування та ремонт обладнання з метою забезпечення його безперебійної роботи.
                   </p>
                 </div>
-                <button class="services-button">Детальніше →</button>
+                <button class="services-button open-modal" data-modal="services-modal4">Детальніше →</button>
               </div>
               </div>
               <div class="swiper-slide services-item ">
@@ -397,7 +439,7 @@
                       <source
                         srcset="/src/img/services/services5.png
                            1x,
-                           ./src/img/services/services5.png 2x
+                           ./src/img/services/services5-2х.png 2x
                         "
                         media="(min-width: 375px)"
                         type="image/png"
@@ -416,7 +458,7 @@
                     Обробка матеріалів та конструкцій (вогнезахисне просочування поверхневе, вогнезахисне обробляння (фарбування, штукатурення, обмотування, облицювання), вогнезахисне заповнення для забезпечення  стійкості до високих температур.
                   </p>
                 </div>
-                <button class="services-button">Детальніше →</button>
+                <button class="services-button open-modal" data-modal="services-modal5">Детальніше →</button>
               </div>
               </div>
               <div class="swiper-slide services-item ">
@@ -427,7 +469,7 @@
                       <source
                         srcset="/src/img/services/services6.png
                            1x,
-                           ./src/img/services/services6.png 2x
+                           ./src/img/services/services6-2х.png 2x
                         "
                         media="(min-width: 375px)"
                         type="image/png"
@@ -446,7 +488,7 @@
                     Розробка концептуальних рішень та рекомендації з підбору обладнання, відповідно запланованому бюджету.
                   </p>
                 </div>
-                <button class="services-button">Детальніше →</button>
+                <button class="services-button open-modal" data-modal="services-modal6">Детальніше →</button>
               </div>
               </div>
               
@@ -547,34 +589,165 @@
         </div>
       </div>
     </section>
+    <!-- Choose-us section -->
+    <section id="choose-us" class="section">
+      <div class="container choose-container">
+        <h2 class="section-title">Чому обирають нас?</h2>
+        <div class="swiper custom-swiper swiper-three">
+          <div class=" swiper-wrapper">
+            <div class="swiper-slide choose-item ">
+              <div class="choose-info-card">
+                  <picture>
+                    <!-- Desktop -->
+                    <source media="(min-width: 1440px)" srcset="
+                    /src/img/choose-us/choose-us1-desk-1x.png   1x,
+                        /src/img/choose-us/choose-us1-desk-2x.png 2x
+                      " type="image/png" />
+                    <!-- Mobile + Tablet -->
+                    <source media="(max-width: 1439px)" srcset="
+                    /src/img/choose-us/choose-us1-1x.png   1x,
+                        /src/img/choose-us/choose-us1-2x.png 2x
+                      " type="image/png" />
+                    <img  class="choose-img"
+                    loading="lazy"
+                    src="/src/img/choose-us/choose-us1-1x.png"
+                    alt=""
+                    width="105"
+                    height="105"/>
+                  </picture>
+                <p class="choose-text">
+                  Професійна команда з досвічених спеціалістів.
+                </p>
+              </div>
+              
+            </div>
+            <div class="swiper-slide choose-item ">
+              <div class="choose-info-card">
+              
+                <picture>
+                  <!-- Desktop -->
+                  <source media="(min-width: 1440px)" srcset="
+                  /src/img/choose-us/choose-us2-desk-1x.png   1x,
+                      /src/img/choose-us/choose-us2-desk-2x.png 2x
+                    " type="image/png" />
+                  <!-- Mobile + Tablet -->
+                  <source media="(max-width: 1439px)" srcset="
+                  /src/img/choose-us/choose-us2-1x.png   1x,
+                      /src/img/choose-us/choose-us2-2x.png 2x
+                    " type="image/png" />
+                  <img  class="choose-img"
+                  loading="lazy"
+                  src="/src/img/choose-us/choose-us2-1x.png"
+                  alt=""
+                  width="105"
+                  height="105"/>
+                </picture>
+                <p class="choose-text">
+                  Сучасне обладнання від перевірених виробників.
+                </p>
+              </div>
+              
+            </div>
+            <div class="swiper-slide choose-item ">
+              <div class="choose-info-card">
+                <picture>
+                  <!-- Desktop -->
+                  <source media="(min-width: 1440px)" srcset="
+                  /src/img/choose-us/choose-us3-desk-1x.png   1x,
+                      /src/img/choose-us/choose-us3-desk-2x.png 2x
+                    " type="image/png" />
+                  <!-- Mobile + Tablet -->
+                  <source media="(max-width: 1439px)" srcset="
+                  /src/img/choose-us/choose-us3-1x.png   1x,
+                      /src/img/choose-us/choose-us3-2x.png 2x
+                    " type="image/png" />
+                  <img  class="choose-img"
+                  loading="lazy"
+                  src="/src/img/choose-us/choose-us3-1x.png"
+                  alt=""
+                  width="105"
+                  height="105"/>
+                </picture>
+                <p class="choose-text">
+                  Гарантія якості на послуги та матеріали.
+                </p>
+              </div>
+              
+            </div>
+            <div class="swiper-slide choose-item ">
+              <div class="choose-info-card">
+                <picture>
+                  <!-- Desktop -->
+                  <source media="(min-width: 1440px)" srcset="
+                  /src/img/choose-us/choose-us4-desk-1x.png   1x,
+                      /src/img/choose-us/choose-us4-desk-2x.png 2x
+                    " type="image/png" />
+                  <!-- Mobile + Tablet -->
+                  <source media="(max-width: 1439px)" srcset="
+                  /src/img/choose-us/choose-us4-1x.png   1x,
+                      /src/img/choose-us/choose-us4-2x.png 2x
+                    " type="image/png" />
+                  <img  class="choose-img"
+                  loading="lazy"
+                  src="/src/img/choose-us/choose-us4-1x.png"
+                  alt=""
+                  width="105"
+                  height="105"/>
+                </picture>
+                <p class="choose-text">
+                  Швидка реакція на запити і сервісна підтримка.
+                </p>
+              </div>
+              
+            </div>
+            
+          </div>
+            <div class="swiper-pagination"></div>
+  
+          <div class="swiper-button-prev swiper-btn-prev"></div>
+          <div class="swiper-button-next swiper-btn-next"></div>
+  
+          <div class="swiper-scrollbar"></div>
+  
+        </div>
+      </div>
+    </section>
     <!-- Our-team section -->
     <section id="team" class="section">
       <div class="container team-container">
         <h2 class="section-title">Наша команда</h2>
         <div class="swiper custom-swiper swiper-five">
           <div class=" swiper-wrapper">
-            <div class="swiper-slide team-item " style="background-image: url('/src/img/img.webp');">
-              <div class="team-info-card" >
-                <h4 class="team-name">first name surname</h4>
-                <p class="team-position">position</p>
+            <div class="swiper-slide team-item " >
+              <div class="team-info-card" style="background-image: url('/src/img/team/team1.jpg');">
+                <div class="team-info-text">
+                <h4 class="team-name">Анастасія Хахалєва</h4>
+                <p class="team-position">Директор</p>
+              </div>
               </div>
             </div>
-            <div class="swiper-slide team-item " style="background-image: url('/src/img/img.webp');">
-              <div class="team-info-card">
-                <h4 class="team-name">first name surname</h4>
-                <p class="team-position">position</p>
+            <div class="swiper-slide team-item " >
+              <div class="team-info-card" style="background-image: url('/src/img/team/team2.jpg');">
+                <div class="team-info-text">
+                <h4 class="team-name">Микола Пилипчук</h4>
+                <p class="team-position">Головний інженер</p>
+                </div>
               </div>
             </div>
-            <div class="swiper-slide team-item " style="background-image: url('/src/img/img.webp');">
-              <div class="team-info-card">
-                <h4 class="team-name">first name surname</h4>
-                <p class="team-position">position</p>
+            <div class="swiper-slide team-item " >
+              <div class="team-info-card" style="background-image: url('/src/img/team/team3.jpg');">
+                <div class="team-info-text">
+                <h4 class="team-name">Анастасія Трубіна</h4>
+                <p class="team-position">Керівник економічного відділу</p>
+                </div>
               </div>
             </div>
-            <div class="swiper-slide team-item " style="background-image: url('/src/img/img.webp');">
-              <div class="team-info-card">
-                <h4 class="team-name">first name surname</h4>
-                <p class="team-position">position</p>
+            <div class="swiper-slide team-item " >
+              <div class="team-info-card" style="background-image: url('/src/img/team/team2.jpg');">
+                <div class="team-info-text">
+                <h4 class="team-name">Віталій Готовський</h4>
+                <p class="team-position">Менеджер проєктів</p>
+                </div>
               </div>
             </div>
           </div>
@@ -597,7 +770,11 @@
           <div class=" swiper-wrapper partners-list">
             <div class="swiper-slide partners-item ">
               <div class="partners-info-card">
-              
+                <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.siemens.com/ua/uk.html"
+              >
                   <picture>
                     <source
                       srcset="/src/img/partners/siemens-logo.svg.png
@@ -614,12 +791,17 @@
                       height="89"
                     />
                   </picture>
+                </a>
               </div>
               
             </div>
             <div class="swiper-slide partners-item ">
               <div class="partners-info-card">
-              
+                <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.bosch.ua/"
+              >
                   <picture>
                     <source
                       srcset="/src/img/partners/bosch.png
@@ -636,11 +818,16 @@
                       height="89"
                     />
                   </picture>
+                </a>
               </div>
             </div>
             <div class="swiper-slide partners-item ">
               <div class="partners-info-card">
-              
+                <a
+                target="_blank"
+                rel="noopener"
+                href="https://vents.ua/"
+              >
                   <picture>
                     <source
                       srcset="/src/img/partners/vents.png
@@ -657,11 +844,17 @@
                       height="89"
                     />
                   </picture>
+                </a>
               </div>
               
             </div>
             <div class="swiper-slide partners-item ">
               <div class="partners-info-card">
+                <a
+                target="_blank"
+                rel="noopener"
+                href="https://ufppro.com/"
+              >
                 <picture>
                   <source
                     srcset="/src/img/partners/UFP.png
@@ -678,11 +871,16 @@
               height="89"
                   />
                 </picture>
+                </a>
               </div>
             </div>
             <div class="swiper-slide partners-item ">
               <div class="partners-info-card">
-              
+                <a
+                target="_blank"
+                rel="noopener"
+                href="https://avmg.ua/"
+              >
                   <picture>
                     <source
                       srcset="/src/img/partners/ab-metal.jpg
@@ -699,12 +897,17 @@
                 height="89"
                     />
                   </picture>
+                </a>
               </div>
               
             </div>
             <div class="swiper-slide partners-item ">
               <div class="partners-info-card">
-              
+                <a
+                target="_blank"
+                rel="noopener"
+                href="https://brandmaster.systems/"
+              >
                   <picture>
                     <source
                       srcset="/src/img/partners/brand.png
@@ -721,11 +924,16 @@
                 height="89"
                     />
                   </picture>
+                </a>
               </div>
             </div>
             <div class="swiper-slide partners-item ">
               <div class="partners-info-card">
-              
+                <a
+                target="_blank"
+                rel="noopener"
+                href="https://brandmaster.systems/"
+              >
                   <picture>
                     <source
                       srcset="/src/img/partners/ventservice.png
@@ -742,12 +950,17 @@
                 height="89"
                     />
                   </picture>
+                </a>
               </div>
               
             </div>
             <div class="swiper-slide partners-item ">
               <div class="partners-info-card">
-              
+                <a
+                target="_blank"
+                rel="noopener"
+                href="https://e-server.com.ua/"
+              >
                   <picture>
                     <source
                       srcset="/src/img/partners/e-server.png
@@ -764,11 +977,16 @@
                 height="89"
                     />
                   </picture>
+                </a>
               </div>
             </div>
             <div class="swiper-slide partners-item ">
               <div class="partners-info-card">
-              
+                <a
+                target="_blank"
+                rel="noopener"
+                href="https://vintana.com.ua/ua/"
+              >
                   <picture>
                     <source
                       srcset="/src/img/partners/vintana.jpeg
@@ -785,12 +1003,17 @@
                 height="89"
                     />
                   </picture>
+                </a>
               </div>
               
             </div>
             <div class="swiper-slide partners-item ">
               <div class="partners-info-card">
-              
+                <a
+                target="_blank"
+                rel="noopener"
+                href="https://senko.com.ua/"
+              >
                   <picture>
                     <source
                       srcset="/src/img/partners/senko.png
@@ -807,11 +1030,16 @@
                 height="89"
                     />
                   </picture>
+                </a>
               </div>
             </div>
             <div class="swiper-slide partners-item ">
               <div class="partners-info-card">
-              
+                <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.walraven.com/ua/"
+              >
                   <picture>
                     <source
                       srcset="/src/img/partners/walraven.png
@@ -828,11 +1056,16 @@
                 height="89"
                     />
                   </picture>
+                </a>
               </div>
             </div>
             <div class="swiper-slide partners-item ">
               <div class="partners-info-card">
-              
+                <a
+                target="_blank"
+                rel="noopener"
+                href="https://tiras.technology/"
+              >
                 <picture>
                   <source
                     srcset="/src/img/partners/tiras.png
@@ -849,6 +1082,7 @@
               height="89"
                   />
                 </picture>
+                </a>
               </div>
             </div>
           </div>
@@ -868,57 +1102,130 @@
         <h2 class="section-title">Поширені запитання (FAQ)</h2>
         <div class="faq-item">
           <button class="faq-question">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.
+            Що таке система протипожежного захисту і навіщо вона мені?
             <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
               <use href="/src/img/icons.svg#icon-arrow"></use>
             </svg></span> 
           </button>
           <div class="faq-answer">
-            <p class="answer-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</p>
+            <p class="answer-text">Це набір обладнання, яке допомагає виявити пожежу на ранній стадії, попередити людей і (в деяких випадках) загасити вогонь. Це важливо, щоб зберегти життя, майно і уникнути штрафів.</p>
           </div>
         </div>
       
         <div class="faq-item">
           <button class="faq-question">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste odio voluptates praesentium cupiditate magnam voluptate, ipsam aliquam animi debitis doloribus quisquam facere asperiores eius quae! Sint fugiat voluptates iure fugit.
+            Які етапи включає встановлення системи пожежної безпеки на об’єкті?
             <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
               <use href="/src/img/icons.svg#icon-arrow"></use>
             </svg></span>
           </button>
           <div class="faq-answer">
             <ul class="answer-list">
-              <li>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</li>
-              <li>-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</li>
-              <li>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</li>
-              <li>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</li>
-              <li>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</li>
-              <li>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</li>
-              <li>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</li>
-              
+              <li>- Виїзд на об’єкт для первинного огляду</li>
+              <li>- Розробка технічного завдання та проєкту</li>
+              <li>- Узгодження проєкту з вами та відповідними інстанціями</li>
+              <li>- Постачання обладнання</li>
+              <li>- Монтаж систем (датчики, оповіщувачі, проводка, шафи управління і т.д.)</li>
+              <li>- Налаштування, програмування та тестування</li>
+              <li>- Пусконалагоджувальні роботи</li>
+              <li>- Інструктаж персоналу</li>
+              <li>- Передача об’єкта на обслуговування (при необхідності)</li>
             </ul>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.
+            Які об’єкти ви обслуговуєте?
             <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
               <use href="/src/img/icons.svg#icon-arrow"></use>
             </svg></span> 
           </button>
           <div class="faq-answer">
-            <p class="answer-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</p>
+            <p class="answer-text">Ми працюємо як з комерційними, так і з житловими об'єктами: офіси, склади, торгові центри, заводи, лікарні, навчальні заклади, аграрні підприємства тощо.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.
+            Скільки часу триває монтаж системи?
             <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
               <use href="/src/img/icons.svg#icon-arrow"></use>
             </svg></span> 
           </button>
           <div class="faq-answer">
-            <p class="answer-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quasi quis impedit velit, vitae quidem. Laudantium soluta cumque laborum esse nihil sunt molestiae accusantium aliquam quibusdam. Exercitationem saepe adipisci unde.</p>
+            <p class="answer-text">Тривалість залежить від складності проєкту, але ми завжди намагаємось дотримуватись оптимальних термінів і заздалегідь узгоджуємо строки виконання.</p>
           </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Чи обов’язково встановлювати систему протипожежного захисту?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/src/img/icons.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text">У більшості випадків — так. Закон вимагає, щоб у будівлях були системи пожежної безпеки. Особливо — у комерційних приміщеннях. Для більш точної відповіді для конкретного об’єкту необхідна додаткова консультація. 
+            </p>
+            </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Як часто потрібно проводити техобслуговування після встановлення?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/src/img/icons.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text">Згідно з нормативами — щомісячний огляд, щоквартальні перевірки, щорічне технічне обслуговування з повною перевіркою всіх елементів. Деталі обслуговування мають бути прописані у регламенті, який затверджується на момент підписання угоди з обслуговуючою організацією.
+            </p>
+            </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Хто відповідає за справність системи після монтажу?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/src/img/icons.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text">Якщо є договір обслуговування — обслуговуюча організація. Якщо ні — відповідальність лягає на власника об’єкта.
+            </p>
+            </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Скільки коштує монтаж/проєктування систем?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/src/img/icons.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text">Ціна залежить від розміру об’єкта і того, що саме необхідно у вашому конкретному випадку.
+            </p>
+            </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Ви працюєте офіційно?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/src/img/icons.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text"> Так, ми маємо ліцензію ДСНС України і досвід. Наші системи проходять обов'язкову перевірку.
+            </p>
+            </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Яке обладнання ви встановлюєте?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/src/img/icons.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text"> Ми постачаємо та монтуємо усе необхідне обладнання, зазначене у проєкті. У випадку проєктування систем — усе залежить від ваших потреб. Ми співпрацюємо з перевіреними вітчизняними та іноземними постачальниками і можемо підібрати обладнання згідно ваших критеріїв та можливостей.
+            </p>
+            </div>
         </div>
       </div>
     </section>
@@ -947,7 +1254,7 @@
         
           <textarea id="message" name="comment" rows="7" placeholder="Напишіть нам ..."></textarea>
         
-          <button type="submit">Надіслати повідомлення</button>
+          <button class="form-button" type="submit">Надіслати повідомлення</button>
         </form>
        
       </div>
@@ -958,59 +1265,115 @@
         <h4 class="contacts-title">Наші контакти</h4>
         <ul class="contacts-list">
           <li class="contacts-item">
-            <img
-              src="/src/img/working-hours.png"
-              alt="Іконка"
-              width="16"
-              height="16"
-            />
+            <picture>
+              <!-- Desktop -->
+              <source media="(min-width: 1440px)" srcset="
+              /src/img/working-hours-desk.png  1x,
+              /src/img/working-hours-2x-desk.png 2x
+                " type="image/png" />
+              <!-- Mobile + Tablet -->
+              <source media="(max-width: 1439px)" srcset="
+              /src/img/working-hours.png  1x,
+              /src/img/working-hours-2x.png 2x
+                " type="image/png" />
+                <img  class="contacts-img"
+                src="/src/img/working-hours.png"
+                alt="Іконка"
+                width="16"
+                height="16"
+              />
+           </picture>
+            
             <p><b>Графік роботи:</b> понеділок-п'ятниця 08:00 – 17:00</p>
           </li>
           <li class="contacts-item">
-            <img
-              src="/src/img/phone.png"
-              alt="Іконка"
-              width="16"
-              height="16"
-            />
+            <picture>
+              <!-- Desktop -->
+              <source media="(min-width: 1440px)" srcset="
+              /src/img/phone-desk.png  1x,
+              /src/img/phone-2x-desk.png 2x
+                " type="image/png" />
+              <!-- Mobile + Tablet -->
+              <source media="(max-width: 1439px)" srcset="
+              /src/img/phone.png  1x,
+              /src/img/phone-2x.png 2x
+                " type="image/png" />
+                <img  class="contacts-img"
+                src="/src/img/phone.png"
+                alt="Іконка"
+                width="16"
+                height="16"
+              />
+           </picture>
             <div>
-              <p>+38 (067) 111-11-11</p>
-              <p>+38 (063) 111-11-11</p>
+              <p>+38 (067) 329-59-39</p>
+              <p>+38 (063) 675-25-46</p>
             </div>
           </li>
           <li class="contacts-item">
-            <img
-              src="/src/img/email.png"
-              alt="Іконка"
-              width="16"
-              height="16"
-            />
+            <picture>
+              <!-- Desktop -->
+              <source media="(min-width: 1440px)" srcset="
+              /src/img/email-desk.png  1x,
+              /src/img/email-2x-desk.png 2x
+                " type="image/png" />
+              <!-- Mobile + Tablet -->
+              <source media="(max-width: 1439px)" srcset="
+              /src/img/email.png  1x,
+              /src/img/email-2x.png 2x
+                " type="image/png" />
+                <img  class="contacts-img"
+                src="/src/img/email.png"
+                alt="Іконка"
+                width="16"
+                height="16"
+              />
+           </picture>
             <div class="emails">
               <ul class="emails-list">
-                <li><p><b>Email:</b></p><p>1111111@gmail.com</p></li>
-                <li><li><p><b>Lorem: </b></p><p>222222@gmail.com</p></li></li>
-                <li><li><p><b>Lorem:</b></p><p>333333@gmail.com</p></li></li>
-                <li><li><p><b>Lorem:</b></p><p>444444444@gmail.com</p></li></li>
-                <li><li><p><b>Lorem:</b></p><p>5555555t@gmail.com</p></li></li>
+                <li><p><b>Email:</b></p><p>guardexpertt@gmail.com</p></li>
+                <li><li><p><b>Департамент продажів: </b></p><p>sales.guardexpertt@gmail.com</p></li></li>
+                <li><li><p><b>Департамент закупівель:</b></p><p>purchasing.guardexpert@gmail.com</p></li></li>
+                <li><li><p><b>Юридичний департамент:</b></p><p>legal.guardexpert@gmail.com</p></li></li>
+                <li><li><p><b>Технічна підтримка:</b></p><p>support.guardexpert@gmail.com</p></li></li>
               </ul>
             </div>
           </li>
           <li class="contacts-item">
-            <img
-              src="/src/img/location.png"
-              alt="Іконка"
-              width="16"
-              height="16"
-            />
+            <picture>
+              <!-- Desktop -->
+              <source media="(min-width: 1440px)" srcset="
+              /src/img/location-desk.png  1x,
+              /src/img/location-2x-desk.png 2x
+                " type="image/png" />
+              <!-- Mobile + Tablet -->
+              <source media="(max-width: 1439px)" srcset="
+              /src/img/location.png  1x,
+              /src/img/location-2x.png 2x
+                " type="image/png" />
+                <img
+                class="contacts-img"
+                src="/src/img/location.png"
+                alt="Іконка"
+                width="16"
+                height="16"
+              />
+           </picture>
+         
             <div>
-              <p>ТОВ «Lorem»</p>
+              <p>ТОВ «Гардексперт»</p>
               <p>
-                08158, Київська обл., Lorem р-н, м. Lorem, вул.
-                Lorem, будинок 54, офіс 4
+                08132, Київська обл., Бучанський р-н, м. Вишневе, вул.
+                Європейська, будинок 27, офіс 5
               </p>
             </div>
           </li>
         </ul>
+        <a
+        target="_blank"
+        rel="noopener"
+        href="https://www.google.com/maps/search/08132,+%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB.,+%D0%91%D1%83%D1%87%D0%B0%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9+%D1%80-%D0%BD,+%D0%BC.+%D0%92%D0%B8%D1%88%D0%BD%D0%B5%D0%B2%D0%B5,+%D0%B2%D1%83%D0%BB.+%D0%84%D0%B2%D1%80%D0%BE%D0%BF%D0%B5%D0%B9%D1%81%D1%8C%D0%BA%D0%B0,+%D0%B1%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA+27/@50.3915468,30.373542,17.25z?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D"
+      >
         <picture class="contacts-map">
           <source
             media="(min-width: 1440px)"
@@ -1031,6 +1394,7 @@
           />
           <img src="/src/img/map-1x-desk.png" alt="Map" />
         </picture>
+        </a>
       </div>
     </section>
   </div>
@@ -1104,14 +1468,16 @@
               href="https://www.linkedin.com/in/llc-guardexpert-439436332"
             >
             <picture>
-              <source
-                srcset="
-                ./src/img/social/linkedIn.png 1x,
-                ./src/img/social/linkedIn-2x.png 2x
-                "
-                media="(min-width: 320px)"
-                type="image/png"
-              />
+               <!-- Desktop -->
+               <source media="(min-width: 1440px)" srcset="
+               /src/img/social/linkedIn-1x-desk.png  1x,
+               /src/img/social/linkedIn-2x-desk.png 2x
+                 " type="image/png" />
+               <!-- Mobile + Tablet -->
+               <source media="(max-width: 1439px)" srcset="
+               /src/img/social/linkedIn.png  1x,
+               /src/img/social/linkedIn-2x.png 2x
+                 " type="image/png" />
               <img
                 class="footer-img"
                 loading="lazy"
@@ -1128,14 +1494,16 @@
               href="https://wa.me/+380673295939"
             >
             <picture>
-              <source
-                srcset="
-                ./src/img/social/whatsapp.png 1x,
-                ./src/img/social/whatsapp-2x.png 2x
-                "
-                media="(min-width: 320px)"
-                type="image/png"
-              />
+               <!-- Desktop -->
+               <source media="(min-width: 1440px)" srcset="
+               /src/img/social/whatsapp-1x-desk.png 1x,
+               /src/img/social/whatsapp-2x-desk.png 2x
+                 " type="image/png" />
+               <!-- Mobile + Tablet -->
+               <source media="(max-width: 1439px)" srcset="
+               /src/img/social/whatsapp.png  1x,
+               /src/img/social/whatsapp-2x.png 2x
+                 " type="image/png" />
               <img
                 class="footer-img"
                 loading="lazy"
@@ -1152,14 +1520,16 @@
               href="viber://chat?number=+380673295939"
             >
             <picture>
-              <source
-                srcset="
-                ./src/img/social/viber.png 1x,
-                ./src/img/social/viber-2x.png 2x
-                "
-                media="(min-width: 320px)"
-                type="image/png"
-              />
+              <!-- Desktop -->
+              <source media="(min-width: 1440px)" srcset="
+              /src/img/social/viber-1x-desk.png 1x,
+              /src/img/social/viber-2x-desk.png 2x
+                " type="image/png" />
+              <!-- Mobile + Tablet -->
+              <source media="(max-width: 1439px)" srcset="
+              /src/img/social/viber.png  1x,
+              /src/img/social/viber-2x.png 2x
+                " type="image/png" />
               <img
                 class="footer-img"
                 loading="lazy"
@@ -1179,14 +1549,16 @@
               href="https://www.instagram.com/guardexpert_official"
             >
             <picture>
-              <source
-                srcset="
-                ./src/img/social/instagram.png 1x,
-                ./src/img/social/instagram-2x.png 2x
-                "
-                media="(min-width: 320px)"
-                type="image/png"
-              />
+               <!-- Desktop -->
+               <source media="(min-width: 1440px)" srcset="
+               /src/img/social/instagram-1x-desk.png  1x,
+               /src/img/social/instagram-2x-desk.png 2x
+                 " type="image/png" />
+               <!-- Mobile + Tablet -->
+               <source media="(max-width: 1439px)" srcset="
+               /src/img/social/instagram.png  1x,
+               /src/img/social/instagram-2x.png 2x
+                 " type="image/png" />
               <img
                 class="footer-img"
                 loading="lazy"
@@ -1200,17 +1572,19 @@
               class=""
               target="_blank"
               rel="noopener"
-              href="https://www.linkedin.com/in/llc-guardexpert-439436332"
+              href="https://t.me/guardexpertt"
             >
             <picture>
-              <source
-                srcset="
-                ./src/img/social/telegram.png 1x,
-                ./src/img/social/telegram-2x.png 2x
-                "
-                media="(min-width: 320px)"
-                type="image/png"
-              />
+               <!-- Desktop -->
+               <source media="(min-width: 1440px)" srcset="
+               /src/img/social/telegram-1x-desk.png 1x,
+               /src/img/social/telegram-2x-desk.png 2x
+                 " type="image/png" />
+               <!-- Mobile + Tablet -->
+               <source media="(max-width: 1439px)" srcset="
+               /src/img/social/telegram.png  1x,
+               /src/img/social/telegram-2x.png 2x
+                 " type="image/png" />
               <img
                 class="footer-img"
                 loading="lazy"
@@ -1229,7 +1603,7 @@
       </div>
     
   </footer>
-    <!-- Modal section -->
+  <!-- Modal section -->
 <section>
   <!-- Modal Menu -->
 
@@ -1288,29 +1662,235 @@
       </form>
     </div>
   </div>
-  <div id="form-status" class="modal hidden">
+  <div id="form-status" class="modal  hidden message-modal">
     <div class="modal-content status-message">
       <button class="close-status">✖</button>
       <p class="status-text">Дякуємо!</p>
       <p class="status-text">Ми з вами зв’яжемося!</p>
+      </picture>
       <picture>
-        <source
-          srcset="
-          /src/img/message.png 1x
-          "
-          media="(min-width: 320px)"
-          type="image/png"
-        />
-        <img
-          class="message-img"
-          loading="lazy"
-          src="/src/img/message.png"
-          alt="photo desc"
-          
-        />
+        <!-- Desktop -->
+        <source media="(min-width: 1440px)" srcset="
+        /src/img/message-desk.png   1x,
+        /src/img/message-2x-desk.png 2x
+          " type="image/png" />
+        <!-- Mobile + Tablet -->
+        <source media="(max-width: 1439px)" srcset="
+        /src/img/message.png   1x,
+        /src/img/message-2x.png 2x
+          " type="image/png" />
+        <img    class="message-img"
+        loading="lazy"
+        src="/src/img/message.png"
+        alt="photo desc"/>
       </picture>
     </div>
   </div>
+
+<!-- Services Modal -->
+<div class="modal hidden" id="services-modal1">
+  <div class="modal-content">
+    <button class="close-modal">✖</button>
+    <picture>
+      <source
+        srcset="/src/img/services/services1.png
+           1x,
+           ./src/img/services/services1.png 2x
+        "
+        media="(min-width: 375px)"
+        type="image/png"
+      />
+      <img
+        class="services-img"
+        loading="lazy"
+        src="/src/img/services/services1.png"
+        alt=""
+        width="80"
+        height="80"
+      />
+    </picture>
+  <h3 class="modal-services-title">Проєктування систем пожежної сигналізації</h3>
+     <p class="modal-services-text">Ви маєте змогу замовити проєкт будь-якої складності і індивідуальне рішення безпосередньо для вашого типу приміщення/запиту.</p>
+     <p class="modal-services-text"><span class="services-accent">Ми проєктуємо: </span> системи пожежної сигналізації, системи пожежогасіння, системи раннього виявлення надзвичайних ситуацій та оповіщення населення, системи вентиляції та кондиціонування, система засобів зв’язку.</p>
+     <p class="modal-services-text"><span class="services-accent">Що входить: </span>проєктування системи пожеж, підбір обладнання, консультація на всіх етапах.</p>
+  </div>
+</div>
+<div class="modal hidden" id="services-modal2">
+  <div class="modal-content">
+    <button class="close-modal">✖</button>
+    <picture>
+      <source
+        srcset="/src/img/services/services2.png
+           1x,
+           ./src/img/services/services2.png 2x
+        "
+        media="(min-width: 375px)"
+        type="image/png"
+      />
+      <img
+        class="services-img"
+        loading="lazy"
+        src="/src/img/services/services2.png"
+        alt=""
+        width="80"
+        height="80"
+      />
+    </picture>
+  <h3 class="modal-services-title">Монтаж та постачання обладнання для систем пожежної сигналізації</h3>
+  <p class="modal-services-text">ТОВ “Гардексперт” здійснює професійний монтаж пожежних сигналізацій, які забезпечують своєчасне виявлення пожежі та автоматичне оповіщення. Ми працюємо з сучасними технологіями, що дозволяють максимально точно і швидко реагувати на зміну умов.</p>
+  <p class="modal-services-text"><span class="services-accent">Опис: </span>Системи сигналізації, які ми монтуємо, адаптовані до різних типів об’єктів: офісних приміщень, складів, торгових центрів, виробничих приміщень, тощо. Проєктування та монтаж проводяться з урахуванням специфіки кожного об'єкта та вимог пожежної безпеки.</p>
+  <p class="modal-services-text"><span class="services-accent">Що входить:</span>монтаж та налаштування, тестування функціональності, консультація з користування та технічна підтримка.</p>
+  </div>
+</div>
+<div class="modal hidden" id="services-modal3">
+  <div class="modal-content">
+    <button class="close-modal">✖</button>
+    <picture>
+      <source
+        srcset="/src/img/services/services3.png
+           1x,
+           ./src/img/services/services3.png 2x
+        "
+        media="(min-width: 375px)"
+        type="image/png"
+      />
+      <img
+        class="services-img"
+        loading="lazy"
+        src="/src/img/services/services3.png"
+        alt=""
+        width="80"
+        height="80"
+      />
+    </picture>
+  <h3 class="modal-services-title">Системи пожежогасіння</h3>
+  <p class="modal-services-text">Ми встановлюємо автоматичні системи пожежогасіння, що забезпечують миттєве реагування на загоряння, подаючи вогнегасні речовини у зону займання. Системи працюють у різних приміщеннях та дозволяють мінімізувати збитки від пожежі, ефективно захищаючи майно.
+  </p>
+  <p class="modal-services-text"><span class="services-accent">Типи систем:</span>у залежності від потреб об'єкта та побажань клієнта ми встановлюємо різні типи пожежогасіння:
+  </p>
+  <ul class="modal-services-list">
+    <li><p class="modal-services-text">Водяне (спринклерне та дренчерне) пожежогасіння
+    </p></li>
+    <li><p class="modal-services-text">Газове пожежогасіння (для високотехнологічних приміщень)</p></li>
+    <li><p class="modal-services-text">Порошкове пожежогасіння (часто використовується для складів і виробництв)</p></li>
+  </ul>
+  <p class="modal-services-text"><span class="services-accent">Що входить:</span>монтаж системи, тестування на відповідність стандартам пожежної безпеки, навчання персоналу.</p>
+  <p class="modal-services-text"><span class="services-accent">Ми пропонуємо рішення по галузям:</span></p>  
+  <ul class="modal-services-list">
+    <li class="modal-services-item"><p class="services-accent">Промислові підприємства</p>
+    <p >Встановлюємо чутливі датчики диму, газу й температури, автоматичне пожежогасіння (газове/порошкове), сегментуємо небезпечні зони та контролюємо пожежні резервуари.</p></li>
+    <li class="modal-services-item">
+    <p class="services-accent">Складські приміщення та логістичні центри</p>
+    <p>
+      Зональні теплові та димові сенсори, спринклери або водяний туман, дистанційний моніторинг і автоматичне гасіння небезпечних речовин.</p></li>
+    <li class="modal-services-item">
+      <p class="services-accent">Торгові центри та громадські заклади</p>
+      <p>Сигналізація в усіх зонах, динамічне оповіщення, локальні системи гасіння для кухонь, централізований контроль і реагування.</p></li>
+      <li class="modal-services-item">
+        <span class="services-accent">Адміністративні та офісні будівлі</span>
+        <p>Адресні сенсори з локалізацією займання, інтеграція з системами доступу та оповіщення, захист серверних та архівів.</p></li>
+        <li class="modal-services-item">
+          <p class="services-accent">Житлові комплекси та готелі</p>
+          <p>Димові датчики, адресні системи для точної локалізації, автоматичне управління евакуацією, спринклери на поверхах і в паркінгах.</p></li>
+          <li class="modal-services-item">
+            <p class="services-accent">Медичні установи та лабораторії</p>
+            <p>Тихі системи оповіщення, модульне гасіння в лабораторіях, клапани для димовидалення, адресна сигналізація.</p></li>
+  </ul>
+  <p class="modal-services-text">Кожне з цих рішень розробляється відповідно до вимог галузі та конкретних потреб об’єкта, що забезпечує ефективність системи та максимальну безпеку.</p>
+</div>
+</div>
+<div class="modal hidden" id="services-modal4">
+  <div class="modal-content">
+    <button class="close-modal">✖</button>
+    <picture>
+      <source
+        srcset="/src/img/services/services4.png
+           1x,
+           ./src/img/services/services4.png 2x
+        "
+        media="(min-width: 375px)"
+        type="image/png"
+      />
+      <img
+        class="services-img"
+        loading="lazy"
+        src="/src/img/services/services4.png"
+        alt=""
+        width="80"
+        height="80"
+      />
+    </picture>
+  <h3 class="modal-services-title">Обслуговування систем пожежної безпеки</h3>
+  <p class="modal-services-text">Ви отримуєте комплексні послуги з перевірки, налаштування та ремонту обладнання  для забезпечення його безперебійної роботи.</p>
+  <p class="modal-services-text"><span class="services-accent">Опис: </span> постійна технічна підтримка дозволяє уникнути збоїв у роботі систем та забезпечує їх готовність до надзвичайної ситуації. Ми гарантуємо повну відповідність усіх компонентів актуальним стандартам пожежної безпеки.
+  </p>
+  <p class="modal-services-text"><span class="services-accent">
+    Що входить: </span>регулярні огляди, діагностика та усунення несправностей, налаштування обладнання, заміна елементів (якщо потрібно), оновлення програмного забезпечення  та проведення профілактичних робіт.
+  </p>
+  </div>
+</div>
+<div class="modal hidden" id="services-modal5">
+  <div class="modal-content">
+    <button class="close-modal">✖</button>
+    <picture>
+      <source
+        srcset="/src/img/services/services5.png
+           1x,
+           ./src/img/services/services5.png 2x
+        "
+        media="(min-width: 375px)"
+        type="image/png"
+      />
+      <img
+        class="services-img"
+        loading="lazy"
+        src="/src/img/services/services5.png"
+        alt=""
+        width="80"
+        height="80"
+      />
+    </picture>
+  <h3 class="modal-services-title">Вогнезахисна обробка конструкцій</h3>
+  <p class="modal-services-text">Ви отримуєте послуги з вогнезахисної обробки конструкцій для підвищення їхньої стійкості до високих температур. Це дозволяє значно зменшити ризик займання та поширення вогню на об'єкті, що забезпечує додатковий час для евакуації та реагування пожежних служб.
+  </p>
+  <p class="modal-services-text"><span class="services-accent">Матеріали та методи: </span>застосовуються сертифіковані вогнезахисні матеріали (фарби, лаки, покриття), що підходять для різних типів конструкцій - дерев'яних, металевих, бетонних. Методи обробки обираються в залежності від особливостей об’єкта і можуть включати нанесення вогнезахисних покриттів або просочувальних засобів.
+
+  </p>
+  <p class="modal-services-text"><span class="services-accent">
+    Що входить: </span>Огляд об'єкта та розробка плану обробки, підбір матеріалів, професійна обробка конструкцій, документування виконаних робіт.
+  </p>
+  </div>
+</div>
+<div class="modal hidden" id="services-modal6">
+  <div class="modal-content">
+    <button class="close-modal">✖</button>
+    <picture>
+      <source
+        srcset="/src/img/services/services6.png
+           1x,
+           ./src/img/services/services6.png 2x
+        "
+        media="(min-width: 375px)"
+        type="image/png"
+      />
+      <img
+        class="services-img"
+        loading="lazy"
+        src="/src/img/services/services6.png"
+        alt=""
+        width="80"
+        height="80"
+      />
+    </picture>
+  <h3 class="modal-services-title">Консультування з питань пожежної безпеки</h3>
+  <p class="modal-services-text">Ми допомагаємо виявити ризики, оптимізувати систему безпеки та дотримуватись нормативних вимог.
+  </p>
+  <p class="modal-services-text"><span class="services-accent">Опис: </span> наші фахівці проводять аудит існуючих систем, розробляють рекомендації з удосконалення, супроводжують процеси погодження документації та допомагають впровадити найкращі практики пожежного захисту. Консультації враховують специфіку об’єкта, його функціональне призначення та діючі нормативи ДБН.
+  </p>
+  <p class="modal-services-text"><span class="services-accent">Що входить: </span>Аналіз та оцінка пожежних ризиків, розробка технічних рішень та рекомендацій, супровід проєктування систем безпеки, підготовка до перевірки експертною організацією, консультації щодо нормативної бази.</p>
+  </div>
+</div>
+
 <!-- Project Modal -->
 <div class="modal hidden" id="project-modal1">
   <div class="modal-content">
