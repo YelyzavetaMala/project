@@ -188,6 +188,30 @@ closeStatusBtn.addEventListener("click", () => {
 });
 
 // зміна мови
+const originalText = {};
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Зберігаємо українські тексти з HTML
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    originalText[key] = el.textContent;
+  });
+
+  // Завантажуємо збережену мову, якщо була
+  const savedLang = localStorage.getItem("lang") || "ua";
+  if (savedLang === "en") {
+    setLanguage("en");
+  }
+
+  // Кнопки
+  document
+    .getElementById("lang-en")
+    .addEventListener("click", () => setLanguage("en"));
+  document
+    .getElementById("lang-ua")
+    .addEventListener("click", () => restoreUkrainian());
+});
+
 async function setLanguage(lang) {
   try {
     const response = await fetch(`/lang.${lang}.json`);
@@ -208,16 +232,12 @@ async function setLanguage(lang) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("lang") || "ua";
-  if (savedLang !== "ua") {
-    setLanguage(savedLang);
-  }
-
-  document
-    .getElementById("lang-ua")
-    .addEventListener("click", () => setLanguage("ua"));
-  document
-    .getElementById("lang-en")
-    .addEventListener("click", () => setLanguage("en"));
-});
+function restoreUkrainian() {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    if (originalText[key]) {
+      el.textContent = originalText[key];
+    }
+  });
+  localStorage.setItem("lang", "ua");
+}
