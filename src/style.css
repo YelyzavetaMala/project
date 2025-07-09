@@ -214,7 +214,7 @@ body::-webkit-scrollbar-track {
 }
 
 .header-hero {
-  background-image: url("./img/header-hero-background.jpg");
+  background-image: url("./img/hero-1x.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -222,11 +222,11 @@ body::-webkit-scrollbar-track {
 
   @media (834px<=width) {
     padding: 16px;
-    background-image: url("./img/header-hero-background-tab.jpg");
+    background-image: url("./img/hero-1x.jpg");
   }
 
   @media (1440px<=width) {
-    background-image: url("./img/header-hero-background-desk.jpg");
+    background-image: url("./img/hero-1x.jpg");
     padding: 40px 24px;
   }
 }
@@ -436,7 +436,7 @@ body::-webkit-scrollbar-track {
     font-weight: 400;
   }
   @media screen and (min-width: 1440px) {
-    font-size: 20px;
+    font-size: 48px;
     font-weight: 700;
   }
 }
@@ -449,7 +449,7 @@ body::-webkit-scrollbar-track {
     font-size: 16px;
   }
   @media screen and (min-width: 1440px) {
-    font-size: 20px;
+    font-size: 28px;
     margin-top: 8px;
     line-height: 1.1;
   }

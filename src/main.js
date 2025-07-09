@@ -186,3 +186,38 @@ const closeStatusBtn = document.querySelector(".close-status");
 closeStatusBtn.addEventListener("click", () => {
   formStatus.style.display = "none";
 });
+
+// зміна мови
+async function setLanguage(lang) {
+  try {
+    const response = await fetch(`/lang.${lang}.json`);
+    if (!response.ok) throw new Error("Файл не знайдено");
+
+    const translations = await response.json();
+
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      if (translations[key]) {
+        el.textContent = translations[key];
+      }
+    });
+
+    localStorage.setItem("lang", lang);
+  } catch (err) {
+    console.error("Помилка завантаження мови:", err.message);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("lang") || "ua";
+  if (savedLang !== "ua") {
+    setLanguage(savedLang);
+  }
+
+  document
+    .getElementById("lang-ua")
+    .addEventListener("click", () => setLanguage("ua"));
+  document
+    .getElementById("lang-en")
+    .addEventListener("click", () => setLanguage("en"));
+});
